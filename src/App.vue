@@ -3,6 +3,7 @@
    <div class="container">
     <Balance />
     <IncomeExpenses />
+    <TransactionList />
 
    </div>
 </template>
