@@ -1,13 +1,10 @@
 <template>
    <h3>History</h3>
       <ul id="list" class="list">
-        <li v-for="transaction in transactions" v-bind:key="transaction.id"></li>
-        <!-- <li class="minus">
+        <li v-for="transaction in transactions" v-bind:key="transaction.id">
           Cash <span>-$400</span><button class="delete-btn">x</button>
         </li>
-        <li class="plus">
-          Paycheck <span>-$800</span><button class="delete-btn">x</button>
-        </li> -->
+        
       </ul>
   </template>
 
