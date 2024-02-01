@@ -1,7 +1,7 @@
 <template>
    <Header />
    <div class="container">
-    <Balance />
+    <Balance :total="total"/>
     <IncomeExpenses />
     <TransactionList :transactions="transactions" />
     <AddTransaction />
