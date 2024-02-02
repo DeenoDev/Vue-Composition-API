@@ -41,7 +41,12 @@
          }, 0).toFixed(2);
           });
 
-          
-
-          //Get Expenses
+         //Get Expenses
+         const expenses = computed(() => {
+         return transactions.value
+         .filter(()=> transaction.amount < 0)
+         .reduce((acc, transaction) => {
+            return acc + transaction.amount;
+         }, 0).toFixed(2);
+          });
 </script>
