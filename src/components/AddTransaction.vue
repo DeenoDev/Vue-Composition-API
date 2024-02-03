@@ -18,10 +18,17 @@
 
 <script setup>
 import { ref } from 'vue';
+import {useToast} from 'vue-toastification';
 
 const text = ref('');
 const amount = ref('');
+
+const toast = useToast;
+
   const onSubmit = () => {
+    if(!text.value || !amount.value) {
+
+    }
     console.log(text.value, amount.value);
   };
 </script>
