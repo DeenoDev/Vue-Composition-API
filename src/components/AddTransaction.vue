@@ -17,7 +17,11 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const text = ref('');
+const amount = ref('');
   const onSubmit = () => {
-    console.log('submit');
+    console.log(text.value, amount.value);
   };
 </script>
