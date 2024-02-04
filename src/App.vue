@@ -49,4 +49,14 @@
             return acc + transaction.amount;
          }, 0).toFixed(2);
           });
+
+          // Add transaction
+          const handleTransactionSubmitted = (transactionData) => {
+           transactions.value.push({
+            id: generateUniqueId(),
+            text: transactionData.text,
+            amount: transactionData.amount
+           });
+
+          }
 </script>
