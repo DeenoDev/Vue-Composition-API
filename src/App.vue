@@ -62,8 +62,7 @@
             amount: transactionData.amount
            });
 
-           
-
+           toast.success('Transaction added');
           };
 
           //Generate unique ID
