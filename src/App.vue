@@ -58,6 +58,8 @@
             amount: transactionData.amount
            });
 
+           console.log(generateUniqueId);
+
           };
 
           //Generate unique ID
