@@ -58,5 +58,10 @@
             amount: transactionData.amount
            });
 
+          };
+
+          //Generate unique ID
+          const generateUniqueId = () => {
+            return Math.floor(Math.random() * 1000000);
           }
 </script>
