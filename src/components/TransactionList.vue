@@ -22,6 +22,7 @@ const props = defineProps({
 });
 
 const deleteTransaction = (id) => {
+  emit('transactionDeleted', id);
 
 }
 
