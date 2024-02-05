@@ -3,7 +3,7 @@
    <div class="container">
     <Balance :total="+total" />
     <IncomeExpenses :income="+income" :expenses="+expenses"/>
-    <TransactionList :transactions="transactions" />
+    <TransactionList :transactions="transactions" @transactionDeleted="handleTransactionDeleted"/>
     <AddTransaction @transactionSubmitted="handleTransactionSubmitted" />
 
    </div>
@@ -69,4 +69,9 @@
           const generateUniqueId = () => {
             return Math.floor(Math.random() * 1000000);
           }
+
+          //Delete transaction
+          const handleTransactionDeleted = (id) => {
+            console.log(id);
+          };
 </script>

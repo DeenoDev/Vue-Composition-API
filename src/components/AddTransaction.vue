@@ -35,7 +35,7 @@ const toast = useToast();
 
     const transactionData = {
       text: text.value,
-      amount: parseFloat(amount.value),
+      amount: parseFloat(amount.value).toFixed(2),
     }
 
     emit('transactionSubmitted', transactionData);
