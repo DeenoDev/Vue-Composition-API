@@ -62,6 +62,8 @@
             amount: transactionData.amount
            });
 
+           saveTransactionsToLocalStorage();
+
            toast.success('Transaction added');
           };
 
