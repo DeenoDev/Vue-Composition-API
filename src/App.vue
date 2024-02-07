@@ -39,10 +39,10 @@
           //Get income
           const income = computed(() => {
          return transactions.value
-         .filter((transaction)=> transaction.amount > 0)
+         .filter((transaction) => transaction.amount > 0)
          .reduce((acc, transaction) => {
             return acc + transaction.amount;
-         }, 0).toFixed(2);
+         }, 0);
           });
 
          //Get Expenses
@@ -62,7 +62,7 @@
             amount: transactionData.amount
            });
 
-           saveTransactionsToLocalStorage();
+         //   saveTransactionsToLocalStorage();
 
            toast.success('Transaction added');
           };
@@ -77,12 +77,14 @@
             transactions.value = transactions.value.filter((transaction) => 
                transaction.id !== id);
 
+               // saveTransactionsToLocalStorage();
+
                toast.success('Transaction deleted'); 
           };
 
           //Save to local storage
-          const saveTransactionsToLocalStorage = () => {
-            localStorage.setItem('transactions', JSON.stringify(transactions.value));
+         //  const saveTransactionsToLocalStorage = () => {
+         //    localStorage.setItem('transactions', JSON.stringify(transactions.value));
 
-          }
+         //  }
 </script>
