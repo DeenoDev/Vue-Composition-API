@@ -77,4 +77,9 @@
 
                toast.success('Transaction deleted'); 
           };
+
+          //Save to local storage
+          const saveTransactionsToLocalStorage = () => {
+            
+          }
 </script>
