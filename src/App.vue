@@ -80,6 +80,7 @@
 
           //Save to local storage
           const saveTransactionsToLocalStorage = () => {
-            
+            localStorage.setItem('transactions', JSON.stringify(transactions.value));
+
           }
 </script>
